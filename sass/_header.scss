@@ -1,0 +1,62 @@
+html {
+    @include container
+}
+header  {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: none;
+
+    @include tablet {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: none;
+    }
+    @include desktop {
+
+    }
+
+    @include container
+}
+
+form {
+    position: relative;
+}
+
+// NYT Image
+
+.nyt-logo {
+    display: flex;
+    align-self: center;
+    padding-top: 20vh;
+}
+
+// Drop Down List
+.section-container {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+.choose-section {
+    padding: 0.5rem 0;
+    
+}
+.logo {
+    text-align: center;
+}
+.options {
+    padding: 1rem 1rem;
+}
+
+// Copyright 
+
+.copyright {
+    color: $copyright-color;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.copyright-text {
+
+}

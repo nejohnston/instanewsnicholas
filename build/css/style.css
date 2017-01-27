@@ -1,0 +1,137 @@
+/*Resets*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background: #000; }
+
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/opensans-light/OpenSans-Light-webfont.eot");
+  src: url("./fonts/opensans-light/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/opensans-light/OpenSans-Light-webfont.woff") format("woff"), url("./fonts/opensans-light/OpenSans-Light-webfont.ttf") format("truetype"), url("./fonts/opensans-light/OpenSans-Light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/opensans-light-italic/OpenSans-LightItalic-webfont.eot");
+  src: url("./fonts/opensans-light-italic/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/opensans-light-italic/OpenSans-LightItalic-webfont.woff") format("woff"), url("./fonts/opensans-light-italic/OpenSans-LightItalic-webfont.ttf") format("truetype"), url("./fonts/opensans-light-italic/OpenSans-LightItalic-webfont.svg#open_sanslight_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/opensans-bold/OpenSans-Bold-webfont.eot");
+  src: url("./fonts/opensans-bold/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/opensans-bold/OpenSans-Bold-webfont.woff") format("woff"), url("./fonts/opensans-bold/OpenSans-Bold-webfont.ttf") format("truetype"), url("./fonts/opensans-bold/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/opensans-bold-italic/OpenSans-BoldItalic-webfont.eot");
+  src: url("./fonts/opensans-bold-italic/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/opensans-bold-italic/OpenSans-BoldItalic-webfont.woff") format("woff"), url("./fonts/opensans-bold-italic/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("./fonts/opensans-bold-italic/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+html {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1600px; }
+
+header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: none;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1600px; }
+  @media (min-width: 600px) and (max-width: 999px) {
+    header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      margin: none; } }
+
+form {
+  position: relative; }
+
+.nyt-logo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-top: 20vh; }
+
+.section-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap; }
+
+.choose-section {
+  padding: 0.5rem 0; }
+
+.logo {
+  text-align: center; }
+
+.options {
+  padding: 1rem 1rem; }
+
+.copyright {
+  color: #c2c2c2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center; }
