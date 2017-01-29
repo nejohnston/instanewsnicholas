@@ -135,3 +135,17 @@ form {
   bottom: 0;
   width: 100%;
   text-align: center; }
+
+ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+
+a {
+  cursor: pointer; }
+
+footer {
+  height: 10vh; }
