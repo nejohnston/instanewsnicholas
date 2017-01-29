@@ -4,9 +4,18 @@ body {
 ul {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
 }
 .insta-image {
+    display: inline-flex;
+    width: 100vh;
+    flex-direction: row wrap;
+    height: 400px;
+    @include tablet {
+        width: 50vh;
+    }
+    @include desktop {
+        width: 25vh;
+    }
 }
 a {
     cursor: pointer;

@@ -140,9 +140,21 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
+      flex-direction: column; }
+
+.insta-image {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100vh;
+  -ms-flex-direction: row wrap;
+      flex-direction: row wrap;
+  height: 400px; }
+  @media (min-width: 600px) and (max-width: 999px) {
+    .insta-image {
+      width: 50vh; } }
+  @media (min-width: 1000px) {
+    .insta-image {
+      width: 25vh; } }
 
 a {
   cursor: pointer; }
