@@ -6,8 +6,9 @@
 </head>
     <body>
     <header>
+    <div class="section-container">
     <img class="nyt-logo" src="./assets/images/nyt-logo.svg">
-    <div class="section-container"
+    <div class="inner-section-container">
     <p class="choose-section">Choose a section:</p>
     <form>
     <select id="options">
@@ -21,9 +22,14 @@
         <option value="fashion">Fashion</option> 
     </select>
     </form>
+    </div>
+    </div>
     </header>
     <section>
-        <div class="article-wrapper" style="display: block;">
+        <div class='loading-gif'>
+            <img class='loader' src='./assets/images/ajax-loader.gif'>
+        </div>
+    <div class="article-wrapper">
     <ul class="category-search"></ul>
     <footer class="copyright">
         <div>

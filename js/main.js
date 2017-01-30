@@ -1,11 +1,22 @@
 $(function() {
 
-
+function showLoadingGif () {
+    $('.loading-gif').css('display', 'inline')
+}
+function hideLoadingGif () {
+    $('.loading-gif').css('display', 'none')
+}
 // => 1
 // => Section
 $('select').on('change', function(e) {
     e.preventDefault();
-    $('.category-search').empty()
+
+// Loading Gif
+
+showLoadingGif ();
+
+$('.category-search').empty()
+
 var category = $('#options').val(); 
 var url = 'http://api.nytimes.com/svc/topstories/v2/' + category + '.json';
 url += '?' + $.param({
@@ -15,6 +26,7 @@ $.ajax({
   url: url,
   method: 'GET',
 })
+
 .done(function(data) {
 
    var newsArticles = data.results;
@@ -34,15 +46,15 @@ var slicedNews = filteredNews.slice(0,12);
         var urlImage = '<div class="article-image" style="background-image:url(' + value.multimedia[4].url + ')">'
         var newsCaption =  '<div class="abstract"><p>' + value.abstract
 
-console.log(value.url)
-
 categorySearch += urlArticle
 categorySearch += urlImage
 categorySearch += newsCaption
 categorySearch += '</p></div></div></a></li>'
         $('.category-search').append(urlArticle + urlImage + newsCaption)
 
-})})
+})
+hideLoadingGif ();
+})
 .fail(function(err) {
   throw err;
 })

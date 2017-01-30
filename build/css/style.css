@@ -80,32 +80,52 @@ html {
   font-weight: bold;
   font-style: italic; }
 
-html {
-  margin: 0 auto;
-  text-align: center;
-  max-width: 1600px; }
+.loading-gif {
+  display: -ms-flexbox;
+  display: flex;
+  display: none; }
+
+.loader {
+  width: auto;
+  height: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center; }
 
 header {
   display: -ms-flexbox;
   display: flex;
   height: auto;
+  max-width: 600px; }
+
+.section-container {
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-flow: column wrap;
       flex-flow: column wrap;
-  -ms-flex-align: center;
-      align-items: center;
-  margin: none;
-  margin: 0 auto;
-  text-align: center;
-  max-width: 1600px; }
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 25px;
+  width: 100%; }
   @media (min-width: 600px) and (max-width: 999px) {
-    header {
-      display: -ms-flexbox;
-      display: flex;
+    .section-container {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
       -ms-flex-pack: start;
           justify-content: flex-start;
       margin: none; } }
+  @media (min-width: 1000px) {
+    .section-container {
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      margin: none; } }
+
+.inner-section-container {
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  vertical-align: baseline; }
 
 form {
   position: relative; }
@@ -115,13 +135,13 @@ form {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  padding-top: 20vh; }
-
-.section-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap; }
+  height: auto; }
+  @media (min-width: 600px) and (max-width: 999px) {
+    .nyt-logo {
+      height: 100px; } }
+  @media (min-width: 1000px) {
+    .nyt-logo {
+      height: 100px; } }
 
 .choose-section {
   padding: 0.5rem 0; }

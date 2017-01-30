@@ -1,24 +1,43 @@
-html {
-    @include container
+// Loading Gif
+
+.loading-gif {
+    display: flex;
+    display: none;
 }
+
+.loader {
+    width: auto;
+    height: 100px;
+    align-self: center;
+}
+
 header {
     display: flex;
     height: auto;
+    max-width: 600px;
+}
+
+.section-container {
+    display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    margin: none;
+    align-self: center;
+    padding: 25px;
+    width: 100%;
 
     @include tablet {
-        display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
         margin: none;
     }
     @include desktop {
-
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        margin: none;
     }
-
-    @include container
+}
+.inner-section-container {
+    flex-flow: column wrap;
+    vertical-align: baseline;
 }
 
 form {
@@ -30,21 +49,19 @@ form {
 .nyt-logo {
     display: flex;
     align-self: center;
-    padding-top: 20vh;
+    height: auto;
 
-    @include tablet {}
-    @include desktop {}
+    @include tablet {
+        height: 100px;
+    }
+    @include desktop {
+        height: 100px;}
 }
 
 // Drop Down List
-.section-container {
-    display: flex;
-    flex-flow: column wrap;
 
-}
 .choose-section {
     padding: 0.5rem 0;
-    
 }
 .logo {
     text-align: center;
