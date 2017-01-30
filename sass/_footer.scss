@@ -1,3 +1,19 @@
+// Footer Sizing
+
 footer {
     height: 10vh;
+    padding: 0 3rem;
+}
+
+// Copyright 
+
+.copyright {
+    color: $copyright-color;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    @include desktop {
+        text-align: left;
+    }
 }

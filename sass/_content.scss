@@ -1,22 +1,57 @@
 body {
 
 }
-ul {
+div {
+    display: block;
+}
+.category-search {
     display: flex;
     flex-direction: column;
-}
-.insta-image {
-    display: inline-flex;
-    width: 100vh;
-    flex-direction: row wrap;
-    height: 400px;
     @include tablet {
-        width: 50vh;
+    flex-flow: row wrap;
     }
     @include desktop {
-        width: 25vh;
+    flex-flow: row wrap;
     }
 }
+.category-search li {
+    position: relative;
+    width: 100%;
+    @include tablet {
+    width: 50%;
+    }
+    @include desktop {
+    width: 25%;
+    }
+}
+.abstract {
+    // visibility: hidden;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.article-image {
+    display: flex;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    @include tablet {
+    flex-direction: row wrap;  
+    }
+    @include desktop {
+    }
+}
+
 a {
     cursor: pointer;
+    color: #fff;
+    font-style: none;
+    width: 100%;
 }

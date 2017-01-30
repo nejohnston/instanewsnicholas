@@ -1,8 +1,9 @@
 html {
     @include container
 }
-header  {
+header {
     display: flex;
+    height: auto;
     flex-flow: column wrap;
     align-items: center;
     margin: none;
@@ -10,6 +11,7 @@ header  {
     @include tablet {
         display: flex;
         flex-flow: row nowrap;
+        justify-content: flex-start;
         margin: none;
     }
     @include desktop {
@@ -29,6 +31,9 @@ form {
     display: flex;
     align-self: center;
     padding-top: 20vh;
+
+    @include tablet {}
+    @include desktop {}
 }
 
 // Drop Down List
@@ -48,15 +53,3 @@ form {
     padding: 1rem 1rem;
 }
 
-// Copyright 
-
-.copyright {
-    color: $copyright-color;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-.copyright-text {
-
-}

@@ -3,7 +3,9 @@ $(function() {
 
 // => 1
 // => Section
-$('select').on('change', function() {
+$('select').on('change', function(e) {
+    e.preventDefault();
+    $('.category-search').empty()
 var category = $('#options').val(); 
 var url = 'http://api.nytimes.com/svc/topstories/v2/' + category + '.json';
 url += '?' + $.param({
@@ -14,33 +16,33 @@ $.ajax({
   method: 'GET',
 })
 .done(function(data) {
+
    var newsArticles = data.results;
 
  function newsWithArticles(newsArticles){
   return newsArticles.multimedia.length === 5;
  }
-// console.log(dataSet);
+
 var filteredNews = newsArticles.filter(newsWithArticles)
-// console.log(filteredArray);
+
 var slicedNews = filteredNews.slice(0,12);
-// console.log(slicedArray);
-    // var newsArray = data.results;
-    // var newsWithImages = newsArray.multimedia.filter(function(images){
-    // return images > 0 });
-    // console.log(images)
 
+    var categorySearch = ''; 
     
-var categorySearch = ''; 
     $.each(slicedNews, function (key, value) {
-                        var newsCaption =  value.abstract 
-                        var urlArticle = value.url 
-                        var urlImage =  '<img class="insta-image" src="' + value.multimedia[4].url + '">'
-                        categorySearch += '<li><a href="' + urlArticle + '">'
-                        categorySearch += '<div style="background-image:' + urlImage + '">'
-                        categorySearch += '<div class="abstract">' + newsCaption + '</div></a></li>'
-                        $('.category-search').append(urlImage + newsCaption)
+        var urlArticle = '<li><a href="' + value.url + '">' 
+        var urlImage = '<div class="article-image" style="background-image:url(' + value.multimedia[4].url + ')">'
+        var newsCaption =  '<div class="abstract"><p>' + value.abstract
 
- })})
+console.log(value.url)
+
+categorySearch += urlArticle
+categorySearch += urlImage
+categorySearch += newsCaption
+categorySearch += '</p></div></div></a></li>'
+        $('.category-search').append(urlArticle + urlImage + newsCaption)
+
+})})
 .fail(function(err) {
   throw err;
 })
