@@ -98,46 +98,62 @@ header {
   height: auto;
   max-width: 600px; }
 
-.without-articles {
+.site-header {
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 2rem;
   height: 90vh; }
 
-.section-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding: 25px;
-  width: 100%; }
+.default-dashboard {
+  -ms-flex-pack: center;
+      justify-content: center; }
   @media (min-width: 600px) and (max-width: 999px) {
-    .section-container {
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-      margin: none; } }
+    .default-dashboard {
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
   @media (min-width: 1000px) {
-    .section-container {
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-      margin: none; } }
+    .default-dashboard {
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
 
-.inner-section-container {
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  vertical-align: baseline; }
+.inner-section {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center; }
 
-.nyt-logo {
+@media (min-width: 600px) and (max-width: 999px) {
+  .articles-dashboard {
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    margin: none; } }
+
+@media (min-width: 1000px) {
+  .articles-dashboard {
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    margin: none; } }
+
+.default-logo {
   height: auto; }
+
+@media (min-width: 600px) and (max-width: 999px) {
+  .articles-logo {
+    height: 100px; } }
+
+@media (min-width: 1000px) {
+  .articles-logo {
+    height: 100px; } }
 
 .choose-section {
   padding: 0.5rem 0; }
-
-.logo {
-  text-align: center; }
 
 .options {
   padding: 1rem 1rem; }

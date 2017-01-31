@@ -11,6 +11,9 @@ function hideLoadingGif () {
 $('select').on('change', function(e) {
     e.preventDefault();
 
+// Add CSS classes with NYT articles
+$( "p" ).addClass( "myClass yourClass" );
+
 // Loading Gif
 showLoadingGif ();
 $('.category-search').empty()

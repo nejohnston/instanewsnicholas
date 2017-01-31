@@ -18,19 +18,28 @@ header {
     height: auto;
     max-width: 600px;
 }
-.with-articles {
-
-}
-
-.without-articles {
+.site-header {
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
     height: 90vh;
 }
-.section-container {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    padding: 25px;
-    width: 100%;
+.default-dashboard {
+        justify-content: center;
+
+    @include tablet {
+        flex-flow: row wrap;
+    }
+    @include desktop {
+        flex-flow: row wrap;
+    }
+}
+.inner-section {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.articles-dashboard {
 
     @include tablet {
         flex-flow: row nowrap;
@@ -42,34 +51,26 @@ header {
         justify-content: flex-start;
         margin: none;
     }
-}
-.inner-section-container {
-    flex-flow: column wrap;
-    vertical-align: baseline;
 }
 
 // NYT Image
 
-.nyt-logo {
-    height: auto;
-
+.default-logo {
+        height: auto;
+}
+.articles-logo {
     @include tablet {
-        
+        height: 100px;
     }
     @include desktop {
-        
-        }
+        height: 100px;
+    }
 }
-
 // Drop Down List
 
 .choose-section {
     padding: 0.5rem 0;
 }
-.logo {
-    text-align: center;
-}
 .options {
     padding: 1rem 1rem;
 }
-
