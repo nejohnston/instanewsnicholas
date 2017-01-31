@@ -47,7 +47,7 @@ var slicedNews = filteredNews.slice(0,12);
 var categorySearch = ''; 
     
     $.each(slicedNews, function (key, value) {
-        var urlArticle = '<li><a href="' + value.url + '">' 
+        var urlArticle = '<li><a href="' + value.url + '" class="text-popup">' 
         var urlImage = '<div class="article-image" style="background-image:url(' + value.multimedia[4].url + ')">'
         var newsCaption =  '<div class="abstract"><p>' + value.abstract
 
