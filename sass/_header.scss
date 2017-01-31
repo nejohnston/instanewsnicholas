@@ -46,8 +46,9 @@ header {
 .inner-section {
     justify-content: center;
     text-align: center;
-    padding-left: 50px;
+    padding: 0 50px;
     position: relative;
+    align-self: center;
 }
 
 
@@ -72,6 +73,6 @@ header {
     padding-bottom: 1.2rem;
 }
 .options {
-    font-size: 1.8rem;
-    padding: 2rem 2rem;
+    font-size: 2rem;
+    padding: 1rem 1rem;
 }

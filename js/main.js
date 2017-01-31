@@ -47,7 +47,7 @@ var slicedNews = filteredNews.slice(0,12);
 var categorySearch = ''; 
     
     $.each(slicedNews, function (key, value) {
-        var urlArticle = '<li><a href="' + value.url + '" class="text-popup">' 
+        var urlArticle = '<li><a href="' + value.url + '">' 
         var urlImage = '<div class="article-image" style="background-image:url(' + value.multimedia[4].url + ')">'
         var newsCaption =  '<div class="abstract"><p>' + value.abstract
 
@@ -60,7 +60,7 @@ categorySearch += '</p></div></div></a></li>'
 })
 hideLoadingGif ();
 })
-.fail(function(err) {
+.fail(function() {
     hideLoadingGif ();
     $('.site-header').removeClass('shrunk-site-header')
     $('.default-logo').removeClass('articles-logo');
