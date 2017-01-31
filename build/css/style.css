@@ -83,14 +83,14 @@ html {
 .loading-gif {
   display: -ms-flexbox;
   display: flex;
-  display: none; }
+  display: none;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 auto; }
 
 .loader {
   width: auto;
-  height: 100px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; }
+  height: 100px; }
 
 header {
   display: -ms-flexbox;
@@ -126,10 +126,10 @@ header {
   height: 65vh; }
   @media (min-width: 600px) and (max-width: 999px) {
     .shrunk-site-header {
-      height: 35vh; } }
+      height: 30vh; } }
   @media (min-width: 1000px) {
     .shrunk-site-header {
-      height: 35vh; } }
+      height: 30vh; } }
 
 .inner-section {
   -ms-flex-pack: center;
@@ -148,7 +148,8 @@ header {
     height: 100px; } }
 
 .choose-section {
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+  font-size: 0.8rem; }
 
 .options {
   padding: 1rem 1rem; }

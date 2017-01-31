@@ -1,5 +1,7 @@
 $(function() {
 
+$('select').selectric();
+
 function showLoadingGif () {
     $('.loading-gif').css('display', 'inline')
 }
@@ -57,7 +59,8 @@ categorySearch += '</p></div></div></a></li>'
 hideLoadingGif ();
 })
 .fail(function(err) {
-  throw err;
+    hideLoadingGif ();
+  $('.category-search').append('Sorry, your request could not be processed.');
 })
 })
 })

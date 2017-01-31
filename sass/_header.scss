@@ -3,12 +3,13 @@
 .loading-gif {
     display: flex;
     display: none;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .loader {
     width: auto;
     height: 100px;
-    align-self: center;
 }
 
 // Default Header Style
@@ -38,10 +39,10 @@ header {
 .shrunk-site-header {
         height: 65vh;
     @include tablet {
-        height: 35vh;
+        height: 30vh;
     }
     @include desktop {
-        height: 35vh;
+        height: 30vh;
     }
 }
 
@@ -68,6 +69,7 @@ header {
 
 .choose-section {
     padding: 0.5rem 0;
+    font-size: 0.8rem;
 }
 .options {
     padding: 1rem 1rem;
