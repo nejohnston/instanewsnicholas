@@ -21,36 +21,30 @@ header {
 .site-header {
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 2rem;
     height: 90vh;
-}
-.default-dashboard {
-        justify-content: center;
-
     @include tablet {
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        margin: none;
     }
     @include desktop {
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        margin: none;
     }
 }
+.default-dashboard {
+     flex-flow: column wrap;
+}
 .inner-section {
-    flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 .articles-dashboard {
 
-    @include tablet {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        margin: none;
-    }
-    @include desktop {
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        margin: none;
-    }
+
 }
 
 // NYT Image

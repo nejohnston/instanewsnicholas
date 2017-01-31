@@ -103,43 +103,33 @@ header {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: 2rem;
-  height: 90vh; }
-
-.default-dashboard {
-  -ms-flex-pack: center;
-      justify-content: center; }
-  @media (min-width: 600px) and (max-width: 999px) {
-    .default-dashboard {
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; } }
-  @media (min-width: 1000px) {
-    .default-dashboard {
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; } }
-
-.inner-section {
   -ms-flex-direction: column;
       flex-direction: column;
+  padding: 2rem;
+  height: 90vh; }
+  @media (min-width: 600px) and (max-width: 999px) {
+    .site-header {
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      margin: none; } }
+  @media (min-width: 1000px) {
+    .site-header {
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      margin: none; } }
+
+.default-dashboard {
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap; }
+
+.inner-section {
   -ms-flex-pack: center;
       justify-content: center;
   text-align: center; }
-
-@media (min-width: 600px) and (max-width: 999px) {
-  .articles-dashboard {
-    -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    margin: none; } }
-
-@media (min-width: 1000px) {
-  .articles-dashboard {
-    -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    margin: none; } }
 
 .default-logo {
   height: auto; }
