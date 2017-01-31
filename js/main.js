@@ -5,10 +5,10 @@ $('select').selectric({
 });
 
 function showLoadingGif () {
-    $('.loading-gif').css('display', 'inline')
+    $('.loader').css('display', 'inline')
 }
 function hideLoadingGif () {
-    $('.loading-gif').css('display', 'none')
+    $('.loader').css('display', 'none')
 }
 // => 1
 // => Section
@@ -25,7 +25,7 @@ $('.category-search').empty()
 
 // NYT API
 var category = $('#options').val(); 
-var url = 'http://api.nytimes.com/svcdicks/topstories/v2/' + category + '.json';
+var url = 'http://api.nytimes.com/svc/topstories/v2/' + category + '.json';
 url += '?' + $.param({
   'api-key': 'a631fc3fad2941638962121f9d0dcb1c'
 })

@@ -1,15 +1,12 @@
 // Loading Gif
 
-.loading-gif {
-    display: flex;
-    display: none;
-    justify-content: center;
-    margin: 0 auto;
-}
-
 .loader {
+    display: absolute;
+    right: 10%;
+    display: none;
     width: auto;
     height: 100px;
+    padding-top: 20px;
 }
 
 // Default Header Style
@@ -49,6 +46,8 @@ header {
 .inner-section {
     justify-content: center;
     text-align: center;
+    padding-left: 50px;
+    position: relative;
 }
 
 
@@ -69,7 +68,8 @@ header {
 
 .choose-section {
     padding: 0.5rem 0;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
 }
 .options {
     font-size: 1.8rem;

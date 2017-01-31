@@ -80,17 +80,13 @@ html {
   font-weight: bold;
   font-style: italic; }
 
-.loading-gif {
-  display: -ms-flexbox;
-  display: flex;
-  display: none;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin: 0 auto; }
-
 .loader {
+  display: absolute;
+  right: 10%;
+  display: none;
   width: auto;
-  height: 100px; }
+  height: 100px;
+  padding-top: 20px; }
 
 header {
   display: -ms-flexbox;
@@ -134,7 +130,9 @@ header {
 .inner-section {
   -ms-flex-pack: center;
       justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding-left: 50px;
+  position: relative; }
 
 .default-logo {
   height: auto; }
@@ -149,7 +147,8 @@ header {
 
 .choose-section {
   padding: 0.5rem 0;
-  font-size: 0.9rem; }
+  font-size: 1.1rem;
+  padding-bottom: 1.2rem; }
 
 .options {
   font-size: 1.8rem;
