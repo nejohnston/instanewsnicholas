@@ -44,8 +44,6 @@ div {
     @include tablet {
     flex-direction: row wrap;  
     }
-    @include desktop {
-    }
 }
 
 a {
@@ -53,4 +51,13 @@ a {
     color: #fff;
     font-style: none;
     width: 100%;
+}
+
+.error-message {
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    left: 20%;
+    font-size: 1.5rem;
+    text-align: center;
 }

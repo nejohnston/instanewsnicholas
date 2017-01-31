@@ -149,10 +149,11 @@ header {
 
 .choose-section {
   padding: 0.5rem 0;
-  font-size: 0.8rem; }
+  font-size: 0.9rem; }
 
 .options {
-  padding: 1rem 1rem; }
+  font-size: 1.8rem;
+  padding: 2rem 2rem; }
 
 div {
   display: block; }
@@ -209,6 +210,14 @@ a {
   color: #fff;
   font-style: none;
   width: 100%; }
+
+.error-message {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  left: 20%;
+  font-size: 1.5rem;
+  text-align: center; }
 
 footer {
   height: 10vh;

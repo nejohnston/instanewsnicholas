@@ -1,6 +1,8 @@
 $(function() {
 
-$('select').selectric();
+$('select').selectric({
+    openOnHover: true,
+});
 
 function showLoadingGif () {
     $('.loading-gif').css('display', 'inline')
@@ -23,7 +25,7 @@ $('.category-search').empty()
 
 // NYT API
 var category = $('#options').val(); 
-var url = 'http://api.nytimes.com/svc/topstories/v2/' + category + '.json';
+var url = 'http://api.nytimes.com/svcdicks/topstories/v2/' + category + '.json';
 url += '?' + $.param({
   'api-key': 'a631fc3fad2941638962121f9d0dcb1c'
 })
@@ -60,7 +62,9 @@ hideLoadingGif ();
 })
 .fail(function(err) {
     hideLoadingGif ();
-  $('.category-search').append('Sorry, your request could not be processed.');
+    $('.site-header').removeClass('shrunk-site-header')
+    $('.default-logo').removeClass('articles-logo');
+    $('.category-search').append('<p class="error-message">Sorry, your request could not be processed.</p>');
 })
 })
 })
