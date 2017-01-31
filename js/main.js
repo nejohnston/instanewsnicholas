@@ -12,11 +12,10 @@ $('select').on('change', function(e) {
     e.preventDefault();
 
 // Loading Gif
-
 showLoadingGif ();
-
 $('.category-search').empty()
 
+// NYT API
 var category = $('#options').val(); 
 var url = 'http://api.nytimes.com/svc/topstories/v2/' + category + '.json';
 url += '?' + $.param({
@@ -36,10 +35,8 @@ $.ajax({
  }
 
 var filteredNews = newsArticles.filter(newsWithArticles)
-
 var slicedNews = filteredNews.slice(0,12);
-
-    var categorySearch = ''; 
+var categorySearch = ''; 
     
     $.each(slicedNews, function (key, value) {
         var urlArticle = '<li><a href="' + value.url + '">' 

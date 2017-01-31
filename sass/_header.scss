@@ -11,16 +11,24 @@
     align-self: center;
 }
 
+// Default Header Style
+
 header {
     display: flex;
     height: auto;
     max-width: 600px;
 }
+.with-articles {
 
+}
+
+.without-articles {
+    height: 90vh;
+}
 .section-container {
     display: flex;
     flex-flow: column wrap;
-    align-self: center;
+    align-content: center;
     padding: 25px;
     width: 100%;
 
@@ -40,22 +48,17 @@ header {
     vertical-align: baseline;
 }
 
-form {
-    position: relative;
-}
-
 // NYT Image
 
 .nyt-logo {
-    display: flex;
-    align-self: center;
     height: auto;
 
     @include tablet {
-        height: 100px;
+        
     }
     @include desktop {
-        height: 100px;}
+        
+        }
 }
 
 // Drop Down List
