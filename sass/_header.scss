@@ -35,17 +35,21 @@ header {
         margin: none;
     }
 }
-.default-dashboard {
-     flex-flow: column wrap;
+.shrunk-site-header {
+        height: 65vh;
+    @include tablet {
+        height: 35vh;
+    }
+    @include desktop {
+        height: 35vh;
+    }
 }
+
 .inner-section {
     justify-content: center;
     text-align: center;
 }
-.articles-dashboard {
 
-
-}
 
 // NYT Image
 

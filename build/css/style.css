@@ -122,9 +122,14 @@ header {
           justify-content: flex-start;
       margin: none; } }
 
-.default-dashboard {
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap; }
+.shrunk-site-header {
+  height: 65vh; }
+  @media (min-width: 600px) and (max-width: 999px) {
+    .shrunk-site-header {
+      height: 35vh; } }
+  @media (min-width: 1000px) {
+    .shrunk-site-header {
+      height: 35vh; } }
 
 .inner-section {
   -ms-flex-pack: center;

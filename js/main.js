@@ -12,7 +12,8 @@ $('select').on('change', function(e) {
     e.preventDefault();
 
 // Add CSS classes with NYT articles
-$( "p" ).addClass( "myClass yourClass" );
+$('.site-header').addClass('shrunk-site-header')
+$('.default-logo').addClass('articles-logo');
 
 // Loading Gif
 showLoadingGif ();
