@@ -1,6 +1,6 @@
  ##News Flash!!!
 
- ![Instanews Screenshot](/assets/images/screenshots/homepage.png/)
+ ![Instanews Screenshot](/assets/images/screenshots/homepage.png)
 
  #Project Summary
 
@@ -12,7 +12,7 @@
  
  Sass, JSON, AJAX, API's, jQuery, Javascript, HTML, CSS, Git/GitHub, Terminal/Command Line
 
- ![Scroll down menu](/assets/images/screenshots/with-articles.png/)
+ ![Scroll down menu](/assets/images/screenshots/with-articles.png)
 
  #Personal Learning
 
@@ -30,7 +30,7 @@
  fully understand how they interact with each other, and exactly what roles they play in that relationship. If I did give a
  definition right now it would be str8 from Google.
 
- ![Error Message](/assets/images/screenshots/error-message.png/)
+ ![Error Message](/assets/images/Screenshots/error-message.png)
 
 #Improvements
 
