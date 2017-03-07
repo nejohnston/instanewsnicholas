@@ -193,8 +193,12 @@ div {
   width: 100%;
   display: block;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  height: 0;
+  transition: height 0.2s linear; }
+
+li:hover .abstract {
+  height: 30%; }
 
 .article-image {
   display: -ms-flexbox;
