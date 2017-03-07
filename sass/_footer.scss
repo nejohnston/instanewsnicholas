@@ -3,9 +3,10 @@
 footer {
     height: 10vh;
     padding: 0 3rem;
+    z-index: 9999999;
 }
 
-// Copyright 
+// Copyright
 
 .copyright {
     color: $copyright-color;

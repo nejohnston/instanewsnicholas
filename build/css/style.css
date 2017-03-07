@@ -175,6 +175,7 @@ div {
           flex-flow: row wrap; } }
 
 .category-search li {
+  overflow-y: hidden;
   position: relative;
   width: 100%; }
   @media (min-width: 600px) and (max-width: 999px) {
@@ -191,11 +192,11 @@ div {
   bottom: 0;
   left: 0;
   width: 100%;
-  display: block;
   background-color: rgba(0, 0, 0, 0.5);
   line-height: 1.5;
   height: 0;
-  transition: height 0.2s linear; }
+  transition: height 0.2s linear;
+  overflow-y: hidden; }
 
 li:hover .abstract {
   height: 30%; }
@@ -225,7 +226,8 @@ a {
 
 footer {
   height: 10vh;
-  padding: 0 3rem; }
+  padding: 0 3rem;
+  z-index: 9999999; }
 
 .copyright {
   color: #c2c2c2;
