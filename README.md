@@ -2,7 +2,7 @@
 
  ![Instanews Screenshot](/assets/images/Screenshots/homepage.png)
 
- #Project Summary
+ # Project Summary
 
  The InstaNews tasked us with developing a news app that called the top 12 New York Times stories from the section selected by
  the user. The project focused on building upon a foundation of Sass folders, emphasizing JavaScript and teaching us how to
