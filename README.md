@@ -1,20 +1,20 @@
- ##News Flash!!!
+ ## News Flash!!!
 
- ![Instanews Screenshot](/assets/images/screenshots/homepage.png)
+ ![Instanews Screenshot](/assets/images/Screenshots/homepage.png)
 
- #Project Summary
+ # Project Summary
 
  The InstaNews tasked us with developing a news app that called the top 12 New York Times stories from the section selected by
  the user. The project focused on building upon a foundation of Sass folders, emphasizing JavaScript and teaching us how to
  properly display data using a mixture of API's, Ajax, and JSON objects.
 
- #Technologies Used
+ # Technologies Used
  
  Sass, JSON, AJAX, API's, jQuery, Javascript, HTML, CSS, Git/GitHub, Terminal/Command Line
 
- ![Scroll down menu](/assets/images/screenshots/with-articles.png)
+ ![Scroll down menu](/assets/images/Screenshots/with-articles.png)
 
- #Personal Learning
+ # Personal Learning
 
  The major learning of this project involves Javascript. By the end of this project I was able to build my own personal
  functions, manipulating them to tailor to my needs. An example of this is the error message. To create a functioning error
@@ -32,7 +32,7 @@
 
  ![Error Message](/assets/images/Screenshots/error-message.png)
 
-#Improvements
+# Improvements
 
 I was really proud of this project. My literacy in JS improved greatly and I am quite confident and ready for the next project.
 One improvement I would make is further utilizing the organization that Sass brings to our code.
