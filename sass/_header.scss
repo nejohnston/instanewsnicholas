@@ -1,12 +1,11 @@
 // Loading Gif
 
 .loader {
-    display: absolute;
-    right: 10%;
-    display: none;
     width: auto;
     height: 100px;
+    display: none;
     padding-top: 20px;
+    margin-left: 7rem;
 }
 
 // Default Header Style
@@ -33,8 +32,8 @@ header {
         margin: none;
     }
 }
-       .shrunk-site-header {
-height: auto;
+    .shrunk-site-header {
+    height: auto;
     @include tablet {
         height: 30vh;
     }

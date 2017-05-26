@@ -81,12 +81,11 @@ html {
   font-style: italic; }
 
 .loader {
-  display: absolute;
-  right: 10%;
-  display: none;
   width: auto;
   height: 100px;
-  padding-top: 20px; }
+  display: none;
+  padding-top: 20px;
+  margin-left: 7rem; }
 
 header {
   display: -ms-flexbox;
@@ -119,7 +118,7 @@ header {
       margin: none; } }
 
 .shrunk-site-header {
-  height: 65vh; }
+  height: auto; }
   @media (min-width: 600px) and (max-width: 999px) {
     .shrunk-site-header {
       height: 30vh; } }
